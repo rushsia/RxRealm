@@ -8,7 +8,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/ReactiveX/RxSwift.git", .upToNextMajor(from: "5.0.0")),
-        .package(url: "https://github.com/realm/realm-cocoa", .upToNextMajor(from: "3.17.0"))
+        .package(url: "https://github.com/realm/realm-cocoa", .branch("master"))
     ],
     targets: [
         .target(
@@ -18,7 +18,7 @@ let package = Package(
                 "RxCocoa",
                 "Realm",
                 "RealmSwift"
-            ]),
-            path: "Pod/Classes"
+            ],
+            path: "Pod/Classes")
     ]
 )
